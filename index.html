@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse our collection of premium products including single items and bundle deals"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>PURE - Pick Your Mood</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico" />
+  </head>
+
+  <body>
+    <!-- Page Header -->
+    <div class="promotion">
+      <h3>SPECIAL LIMITED OFFER | BUY 2 GET 1 FREE | BUY 4 GET 2 FREE</h3>
+    </div>
+    <header class="page-header">
+      <div class="nav-container">
+        <!-- Hamburger Button (visible on mobile) -->
+        <button
+          class="hamburger-btn"
+          id="hamburgerBtn"
+          aria-label="Open navigation menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="logo">
+          <h1>pure</h1>
+        </div>
+        <ul class="nav-links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="#">Shop</a></li>
+          <li class="link"><a href="#">Contact</a></li>
+          <li class="link"><a href="#">About Us</a></li>
+          <li class="link"><a href="#">FAQ</a></li>
+          <li class="link"><a href="#">Wholesale</a></li>
+        </ul>
+        <!-- Cart Button -->
+        <button class="cart-button" id="cartButton" aria-label="Shopping cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="black"
+            class="bi bi-bag-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+            />
+          </svg>
+
+          <span class="cart-count hidden" id="cartCount">0</span>
+        </button>
+      </div>
+
+      <div class="header-container">
+        <div class="header-content">
+          <div class="left-side">
+            <p class="rating">✭✭✭✭✭ 4.9/5 | Based on 1,000+ reviews</p>
+            <h1 class="page-title">Pick Your Mood</h1>
+            <p class="page-subtitle padding-bottom-10px">
+              Zero Nic, just pure plant-based diffuser. Discover our naturally
+              derived formulas today. Wanna quick boost or a moment to chill? We
+              got you covered either way.
+            </p>
+            <div class="addition-container">
+              <p class="page-addition">
+                <i class="bi bi-leaf"></i> Active ingredients for every mood
+              </p>
+              <p class="page-addition">
+                <i class="bi bi-check2"></i> No Nic & Plant Powered
+              </p>
+              <p class="page-addition">
+                <i class="bi bi-patch-check"></i> 30-Day Guarantee
+              </p>
+            </div>
+          </div>
+          <div class="main-image">
+            <img src="assets/main-img.png" alt="Main Mood Image" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Overlay -->
+      <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+      <!-- Mobile Navigation Sidebar -->
+      <nav class="mobile-nav-sidebar" id="mobileNavSidebar">
+        <div class="mobile-nav-header">
+          <div class="mobile-nav-logo">pure</div>
+          <button
+            class="mobile-nav-close"
+            id="mobileNavClose"
+            aria-label="Close navigation menu"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Wholesale</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Tab Navigation -->
+      <nav class="tab-navigation" role="tablist">
+        <button
+          class="tab-btn active"
+          data-filter="all"
+          role="tab"
+          aria-selected="true"
+        >
+          All Products
+        </button>
+        <button
+          class="tab-btn"
+          data-filter="bundle"
+          role="tab"
+          aria-selected="false"
+        >
+          Bundles + Best Deals
+        </button>
+        <button
+          class="tab-btn"
+          data-filter="single"
+          role="tab"
+          aria-selected="false"
+        >
+          Single Diffusers
+        </button>
+      </nav>
+
+      <!-- Products Section -->
+      <section class="products-section">
+        <!-- Loading State -->
+        <div class="loading-container" id="loadingContainer">
+          <div class="loading-spinner"></div>
+          <p>Loading amazing products...</p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid" role="list"></div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">📦</div>
+          <h2 class="empty-title">No products found</h2>
+          <p class="empty-message">
+            Try selecting a different category to explore our collection.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h2 class="cart-title">Shopping Cart</h2>
+          <button class="cart-close" id="cartClose" aria-label="Close cart">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18M6 6L18 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="cart-body">
+          <div class="cart-empty" id="cartEmpty">
+            <div class="cart-empty-icon">🛒</div>
+            <p>Your cart is empty</p>
+          </div>
+          <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span class="cart-total-label">Total:</span>
+            <span class="cart-total-amount" id="cartTotal">$0.00</span>
+          </div>
+          <button class="cart-checkout-btn" id="checkoutBtn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQs -->
+
+    <section class="faqs-section" data-aos="fade-up">
+      <h1 class="page-title faq-title">Frequently Asked Questions</h1>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingA">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseA"
+              aria-expanded="true"
+              aria-controls="collapseA"
+            >
+              Will these help me quit ?
+            </button>
+          </h2>
+          <div
+            id="collapseA"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingA"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer A</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingB">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseB"
+              aria-expanded="false"
+              aria-controls="collapseB"
+            >
+              Does it have nic?
+            </button>
+          </h2>
+          <div
+            id="collapseB"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingB"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer B</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingC">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseC"
+              aria-expanded="false"
+              aria-controls="collapseC"
+            >
+              What are the ingredients?
+            </button>
+          </h2>
+          <div
+            id="collapseC"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingC"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer C</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingD">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseD"
+              aria-expanded="false"
+              aria-controls="collapseD"
+            >
+              How long does each diffuser last?
+            </button>
+          </h2>
+          <div
+            id="collapseD"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingD"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer D</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingE">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseE"
+              aria-expanded="false"
+              aria-controls="collapseE"
+            >
+              Can I return it?
+            </button>
+          </h2>
+          <div
+            id="collapseE"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingD"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer E</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingF">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseF"
+              aria-expanded="false"
+              aria-controls="collapseF"
+            >
+              Buy 2 Get 1 FREE + Buy 3 Get 2 FREE
+            </button>
+          </h2>
+          <div
+            id="collapseF"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingF"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">Answer F</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
