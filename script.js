@@ -29,21 +29,21 @@ class ProductDatabase {
         tastes: [
           {
             name: "1x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
-          { name: "1x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
-          { name: "1x Mullein", icon: "/assets/icons/mullein.svg" },
+          { name: "1x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
+          { name: "1x Mullein", icon: "./assets/icons/mullein.svg" },
           {
             name: "1x Lavender Berry",
-            icon: "/assets/icons/lavender-berry.svg",
+            icon: "./assets/icons/lavender-berry.svg",
           },
           {
             name: "1x Cool Mint Frost",
-            icon: "/assets/icons/cool-mint-frost.svg",
+            icon: "./assets/icons/cool-mint-frost.svg",
           },
-          { name: "1x Watermelon", icon: "/assets/icons/watermelon.svg" },
+          { name: "1x Watermelon", icon: "./assets/icons/watermelon.svg" },
         ],
-        image: "/assets/The-Complete-Set.png",
+        image: "./assets/The-Complete-Set.png",
       },
       {
         id: 2,
@@ -54,7 +54,7 @@ class ProductDatabase {
         originalPrice: 18.95,
         currentPrice: 16.11,
         badgeType: "promo",
-        image: "/assets/Mullein-Diffuser.png",
+        image: "./assets/Mullein-Diffuser.png",
       },
       {
         id: 3,
@@ -65,7 +65,7 @@ class ProductDatabase {
         originalPrice: 18.95,
         currentPrice: 16.11,
         badgeType: "promo",
-        image: "/assets/Calm-Diffuser.png",
+        image: "./assets/Calm-Diffuser.png",
       },
       {
         id: 4,
@@ -76,7 +76,7 @@ class ProductDatabase {
         originalPrice: 18.95,
         currentPrice: 16.11,
         badgeType: "feature",
-        image: "/assets/Vitamin-B-12-Diffuser.png",
+        image: "./assets/Vitamin-B-12-Diffuser.png",
       },
       {
         id: 5,
@@ -90,23 +90,23 @@ class ProductDatabase {
         discountText: "BUY 2 GET 1 FREE",
         badge: "energy",
         badgeType: "option",
-        badgeIcon: "/assets/icons/energy.svg",
+        badgeIcon: "./assets/icons/energy.svg",
         specialTastes: true,
         tastes: [
           {
             name: "Cherry <br /> Ice",
-            icon: "/assets/icons/cherry-ice-spec.svg",
+            icon: "./assets/icons/cherry-ice-spec.svg",
           },
           {
             name: "Cool Mint <br /> Frost",
-            icon: "/assets/icons/cool-mint-frost-spec.svg",
+            icon: "./assets/icons/cool-mint-frost-spec.svg",
           },
           {
             name: "Iced <br /> Latte",
-            icon: "/assets/icons/iced-latte-spec.svg",
+            icon: "./assets/icons/iced-latte-spec.svg",
           },
         ],
-        image: "/assets/Caffeine-Diffuser.png",
+        image: "./assets/Caffeine-Diffuser.png",
       },
       {
         id: 6,
@@ -121,8 +121,8 @@ class ProductDatabase {
         badge: "BUY 2 GET 1 FREE",
         badge: "enhance",
         badgeType: "option",
-        badgeIcon: "/assets/icons/enhance.svg",
-        image: "/assets/Gaming-Diffuser.png",
+        badgeIcon: "./assets/icons/enhance.svg",
+        image: "./assets/Gaming-Diffuser.png",
       },
       {
         id: 7,
@@ -136,8 +136,8 @@ class ProductDatabase {
         discountText: "BUY 2 GET 1 FREE",
         badge: "sleep",
         badgeType: "option",
-        badgeIcon: "/assets/icons/sleep.svg",
-        image: "/assets/Melatonin-Diffuser.png",
+        badgeIcon: "./assets/icons/sleep.svg",
+        image: "./assets/Melatonin-Diffuser.png",
       },
       {
         id: 8,
@@ -150,24 +150,24 @@ class ProductDatabase {
         discount: 40,
         badge: "multi-formula",
         badgeType: "option",
-        badgeIcon: "/assets/icons/multi-formula.svg",
+        badgeIcon: "./assets/icons/multi-formula.svg",
         tastes: [
           {
             name: "1x GlowBerry",
-            icon: "/assets/icons/glow-berry.svg",
+            icon: "./assets/icons/glow-berry.svg",
           },
-          { name: "1x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
+          { name: "1x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
 
           {
             name: "1x Cool Mint Frost",
-            icon: "/assets/icons/cool-mint-frost.svg",
+            icon: "./assets/icons/cool-mint-frost.svg",
           },
           {
             name: "1x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
         ],
-        image: "/assets/Best-Of-Pure.png",
+        image: "./assets/Best-Of-Pure.png",
       },
       {
         id: 9,
@@ -180,16 +180,16 @@ class ProductDatabase {
         discount: 40,
         badge: "detox",
         badgeType: "option",
-        badgeIcon: "/assets/icons/detox.svg",
+        badgeIcon: "./assets/icons/detox.svg",
         tastes: [
-          { name: "2x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
+          { name: "2x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
           {
             name: "2x Lavender Berry",
-            icon: "/assets/icons/lavender-berry.svg",
+            icon: "./assets/icons/lavender-berry.svg",
           },
-          { name: "2x Mullein", icon: "/assets/icons/mullein.svg" },
+          { name: "2x Mullein", icon: "./assets/icons/mullein.svg" },
         ],
-        image: "/assets/Lung-Reset-Pack.png",
+        image: "./assets/Lung-Reset-Pack.png",
       },
       {
         id: 10,
@@ -202,20 +202,20 @@ class ProductDatabase {
         discount: 40,
         badge: "sleep",
         badgeType: "option",
-        badgeIcon: "/assets/icons/sleep.svg",
+        badgeIcon: "./assets/icons/sleep.svg",
         tastes: [
-          { name: "2x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
-          { name: "1x Mullein", icon: "/assets/icons/mullein.svg" },
+          { name: "2x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
+          { name: "1x Mullein", icon: "./assets/icons/mullein.svg" },
           {
             name: "2x Lavender Berry",
-            icon: "/assets/icons/lavender-berry.svg",
+            icon: "./assets/icons/lavender-berry.svg",
           },
           {
             name: "1x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
         ],
-        image: "/assets/Sweet-Dreams.png",
+        image: "./assets/Sweet-Dreams.png",
       },
       {
         id: 11,
@@ -228,24 +228,24 @@ class ProductDatabase {
         discount: 40,
         badge: "multi-formula",
         badgeType: "option",
-        badgeIcon: "/assets/icons/multi-formula.svg",
+        badgeIcon: "./assets/icons/multi-formula.svg",
         tastes: [
-          { name: "2x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
+          { name: "2x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
           {
             name: "1x Cool Mint Frost",
-            icon: "/assets/icons/cool-mint-frost.svg",
+            icon: "./assets/icons/cool-mint-frost.svg",
           },
-          { name: "1x Cherry Ice", icon: "/assets/icons/cherry-ice.svg" },
+          { name: "1x Cherry Ice", icon: "./assets/icons/cherry-ice.svg" },
           {
             name: "2x Lavender Berry",
-            icon: "/assets/icons/lavender-berry.svg",
+            icon: "./assets/icons/lavender-berry.svg",
           },
           {
             name: "2x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
         ],
-        image: "/assets/The-Night+Day-Kit.png",
+        image: "./assets/The-Night+Day-Kit.png",
       },
       {
         id: 12,
@@ -258,20 +258,20 @@ class ProductDatabase {
         discount: 40,
         badge: "enhance",
         badgeType: "option",
-        badgeIcon: "/assets/icons/enhance.svg",
+        badgeIcon: "./assets/icons/enhance.svg",
         tastes: [
-          { name: "3x GlowBerry", icon: "/assets/icons/glow-berry.svg" },
-          { name: "1x Watermelon", icon: "/assets/icons/watermelon.svg" },
+          { name: "3x GlowBerry", icon: "./assets/icons/glow-berry.svg" },
+          { name: "1x Watermelon", icon: "./assets/icons/watermelon.svg" },
           {
             name: "2x Cool Mint Frost",
-            icon: "/assets/icons/cool-mint-frost.svg",
+            icon: "./assets/icons/cool-mint-frost.svg",
           },
           {
             name: "2x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
         ],
-        image: "/assets/Game-Mode.png",
+        image: "./assets/Game-Mode.png",
       },
       {
         id: 13,
@@ -284,32 +284,32 @@ class ProductDatabase {
         discount: 40,
         badge: "multi-formula",
         badgeType: "option",
-        badgeIcon: "/assets/icons/multi-formula.svg",
+        badgeIcon: "./assets/icons/multi-formula.svg",
         tastes: [
-          { name: "1x Mullein", icon: "/assets/icons/mullein.svg" },
-          { name: "1x Cherry Ice", icon: "/assets/icons/cherry-ice.svg" },
-          { name: "1x GlowBerry", icon: "/assets/icons/glow-berry.svg" },
-          { name: "1x Watermelon", icon: "/assets/icons/watermelon.svg" },
+          { name: "1x Mullein", icon: "./assets/icons/mullein.svg" },
+          { name: "1x Cherry Ice", icon: "./assets/icons/cherry-ice.svg" },
+          { name: "1x GlowBerry", icon: "./assets/icons/glow-berry.svg" },
+          { name: "1x Watermelon", icon: "./assets/icons/watermelon.svg" },
           {
             name: "1x StrawBerry Kiwi",
-            icon: "/assets/icons/strawberry-kiwi.svg",
+            icon: "./assets/icons/strawberry-kiwi.svg",
           },
           {
             name: "1x Lavender Berry",
-            icon: "/assets/icons/lavender-berry.svg",
+            icon: "./assets/icons/lavender-berry.svg",
           },
           {
             name: "1x Cool Mint Frost",
-            icon: "/assets/icons/cool-mint-frost.svg",
+            icon: "./assets/icons/cool-mint-frost.svg",
           },
-          { name: "1x Peach Cream", icon: "/assets/icons/peach-cream.svg" },
+          { name: "1x Peach Cream", icon: "./assets/icons/peach-cream.svg" },
           {
             name: "1x Blue Raspberry",
-            icon: "/assets/icons/blue-raspberry.svg",
+            icon: "./assets/icons/blue-raspberry.svg",
           },
-          { name: "1x Iced Latte", icon: "/assets/icons/iced-latte.svg" },
+          { name: "1x Iced Latte", icon: "./assets/icons/iced-latte.svg" },
         ],
-        image: "/assets/The-Sampler.png",
+        image: "./assets/The-Sampler.png",
       },
     ];
     /*     console.log(this.products); */
@@ -432,24 +432,20 @@ class CartManager {
       cartItem.className = "cart-item";
 
       cartItem.innerHTML = `
-                      <img src="${item.image}" alt="${
-        item.name
-      }" class="cart-item-image">
+                      <img src="${item.image}" alt="${item.name
+        }" class="cart-item-image">
                       <div class="cart-item-details">
                           <div class="cart-item-name">${item.name}</div>
                           <div class="cart-item-price">$${item.currentPrice.toFixed(
-                            2
-                          )}</div>
+          2
+        )}</div>
                           <div class="cart-item-quantity">
-                              <button class="quantity-btn" data-id="${
-                                item.id
-                              }" data-action="decrease">−</button>
-                              <span class="quantity-value">${
-                                item.quantity
-                              }</span>
-                              <button class="quantity-btn" data-id="${
-                                item.id
-                              }" data-action="increase">+</button>
+                              <button class="quantity-btn" data-id="${item.id
+        }" data-action="decrease">−</button>
+                              <span class="quantity-value">${item.quantity
+        }</span>
+                              <button class="quantity-btn" data-id="${item.id
+        }" data-action="increase">+</button>
                           </div>
                       </div>
                       <button class="cart-item-remove" data-id="${item.id}">
@@ -596,18 +592,18 @@ class UIManager {
     if (product.discountText) {
       badgeHTML += `
       <span class="discount-badge">
-      <img src="/assets/icons/discount.svg" alt="Discount icon" class="badge-icon" />
+      <img src="./assets/icons/discount.svg" alt="Discount icon" class="badge-icon" />
       ${product.discountText}
     </span>`;
     } else if (product.discount) {
       badgeHTML += `
         <span class="discount-badge">
-          <img src="/assets/icons/discount.svg" alt="Discount icon" class="badge-icon" />
+          <img src="./assets/icons/discount.svg" alt="Discount icon" class="badge-icon" />
           ${product.discount}% OFF
         </span>`;
     }
     if (product.badge) {
-      const defaultIcon = "/assets/icons/attention.svg";
+      const defaultIcon = "./assets/icons/attention.svg";
       const iconSrc =
         product.badgeType === "option" && product.badgeIcon
           ? product.badgeIcon
@@ -617,8 +613,8 @@ class UIManager {
         product.badgeType === "limited"
           ? "limited"
           : product.badgeType === "option"
-          ? "option"
-          : "";
+            ? "option"
+            : "";
 
       badgeHTML += `
         <span class="bundle-badge ${badgeClass}">
@@ -656,9 +652,8 @@ class UIManager {
 
     card.innerHTML = `
       <div class="product-image-container" style="position: relative;">
-        <img src="${product.image}" alt="${
-      product.name
-    }" class="product-image" loading="lazy">
+        <img src="${product.image}" alt="${product.name
+      }" class="product-image" loading="lazy">
         ${badgeHTML}
         ${tastesHTML}
       </div>
@@ -668,14 +663,13 @@ class UIManager {
         <p class="product-label">${product.label}</p>
         <div class="price-section">
           <span class="price-original">$${product.originalPrice.toFixed(
-            2
-          )}</span>
+        2
+      )}</span>
           <span class="price-current">$${product.currentPrice.toFixed(2)}</span>
           <span class="price-save">${savingsPercent}% Off</span>
         </div>
-        <button class="add-to-cart-btn" data-product-id="${
-          product.id
-        }" aria-label="Add ${product.name} to cart">
+        <button class="add-to-cart-btn" data-product-id="${product.id
+      }" aria-label="Add ${product.name} to cart">
           Add To Cart
         </button>
       </div>
